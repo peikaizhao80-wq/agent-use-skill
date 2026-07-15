@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Use"
+  short_description: "Call a configured external agent and summarize its visible work."
+  default_prompt: "Use $agent-use to call the configured agent for this task and summarize its visible work."
