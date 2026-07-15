@@ -1,0 +1,23 @@
+{
+  "agent_label": "claudecodeagent via Claude Code",
+  "command": [
+    "%APPDATA%\\npm\\claude.ps1",
+    "--agent",
+    "claudecodeagent",
+    "-p",
+    "{prompt}",
+    "--output-format",
+    "json",
+    "--no-session-persistence"
+  ],
+  "timeout_seconds": 600,
+  "working_directory": "",
+  "summary_mode": "visible-work",
+  "project_scoped_artifacts": true,
+  "notes": [
+    "Change this file only when the user explicitly asks to change or reconfigure the external agent.",
+    "Keep exactly one {prompt} placeholder in the command array.",
+    "Visible run artifacts should stay under the active project work/agent-use directory.",
+    "For Claude Code commands, keep --no-session-persistence unless the user explicitly asks for persistent external-agent sessions."
+  ]
+}
